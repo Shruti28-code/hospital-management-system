@@ -68,35 +68,15 @@
     </dependencies>
 
     <!-- BUILD -->
-    <build>
+   <build>
+    <plugins>
 
-        <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
 
-            <!-- SPRING BOOT -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
-            <!-- JAVAFX -->
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
-
-                <configuration>
-
-                    <!-- IMPORTANT -->
-                    <mainClass>
-                        com.hospital.ui.MainApp
-                    </mainClass>
-
-                </configuration>
-
-            </plugin>
-
-        </plugins>
-
-    </build>
+    </plugins>
+</build>
 
 </project>
